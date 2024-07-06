@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All products - AttireModique | ommerce Website Design</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style/about.css">
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,14 +14,14 @@
 <body>
 
 
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img src="images/Logo.svg" width="100px">
-        </div>
-        <nav>
-          <ul>
-            <ul id="MenuItems">
+  <div class="nav-container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/Logo.svg" width="100px">
+      </div>
+      <nav>
+        <ul>
+          <ul id="MenuItems">
             <li><a href="">Home</a></li>
             <li><a href="">Products</a></li>
             <li><a href="">Product View</a></li>
@@ -29,69 +29,71 @@
             <li><a href="">Contact Us</a></li>
             <li><a href="">Account</a></li>
           </ul>
-        </nav>
-        <img src="images/logo1.jpg" style="mix-blend-mode: multiply;" width="30px" height="30px">
-        <img src="images/icons8-menu.svg" class="menu-icon" onclick="menutoggle()">
+      </nav>
+      <img src="images/logo1.jpg" style="mix-blend-mode: multiply;" width="30px" height="30px">
+      <img src="images/icons8-menu.svg" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+  <div class="about-container">
+    <section class="about-section">
+      <h1>About Us</h1>
+      <p>Welcome to Your Ecommerce Store, where we offer a wide range of products from clothing and accessories to
+        electronics and home goods. Our mission is to provide high-quality products at competitive prices, backed by
+        exceptional customer service.</p>
+      <p>Founded in [Year], Your Ecommerce Store has grown from a small startup to a trusted online retailer serving
+        customers worldwide. We are committed to innovation, sustainability, and customer satisfaction.</p>
+      <p>Explore our website to discover our latest collections and special offers. Thank you for choosing Your
+        Ecommerce Store!</p>
+    </section>
+    </main>
+  </div>
+
+  <footer id="footer">
+    <div class="links">
+      <h3>Follow Us</h3>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>Youtube</li>
+      </ul>
+    </div>
+    <div class="footer-logo-section">
+      <img src="/images/Logo.svg" width="100px" alt="logo">
+      <p>@Copyright AM 2024 </p>
+    </div>
+    <div class="footer-links">
+      <div class="links-section">
+        <a href="/index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
       </div>
     </div>
+  
+  </footer>
 
-    <div class="container">
-            <section class="about-section">
-                <h1>About Us</h1>
-                <p>Welcome to Your Ecommerce Store, where we offer a wide range of products from clothing and accessories to electronics and home goods. Our mission is to provide high-quality products at competitive prices, backed by exceptional customer service.</p>
-                <p>Founded in [Year], Your Ecommerce Store has grown from a small startup to a trusted online retailer serving customers worldwide. We are committed to innovation, sustainability, and customer satisfaction.</p>
-                <p>Explore our website to discover our latest collections and special offers. Thank you for choosing Your Ecommerce Store!</p>
-            </section>
-        </main>
-        <footer> <!------------------ footer ----------------->
+  <!------------------js for toggle menu----------------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
 
-            <footer id="footer">
-             <div class="links">
-               <h3>Follow Us</h3>
-                  <ul>
-                      <li>Facebook</li>
-                      <li>Twitter</li>
-                      <li>Instagram</li>
-                      <li>Youtube</li>
-                  </ul>
-             </div>
-             <div class="footer-logo-section">
-               <img src="/images/Logo.svg" width="100px" alt="logo">
-               <p>@Copyright AM 2024 </p>
-             </div>
-             <div class="footer-links">
-               <div class="links-section">
-                 <a href="/index.html">Home</a>
-                 <a href="#">About</a>
-                 <a href="#">Contact</a>
-                </div>
-               </div>
-             </div>
-          
-              <!------------------js for toggle menu----------------->
-              <script>
-               var MenuItems = document.getElementById("MenuItems");
-         
-               MenuItems.style.maxHeight = "0px";
-         
-               function menutoggle(){
-               if(MenuItems.style.maxHeight == "0px")
-               {
-                 MenuItems.style.maxHeight = "200px";
-               }
-               else
-               {
-               MenuItems.style.maxHeight = "0px";
-               }
-               }
-               </script>
-              
-         </body>
-         </html>
-            
-              
-            <p>&copy; 2024 Your Ecommerce Store. All rights reserved.</p>
-        </footer>
-    </div>
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
 </body>
+
+</html>
+
+
+</body>
+
 </html>

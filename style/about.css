@@ -1,0 +1,155 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.nav-container {
+    padding: 1rem 5rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 600px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.about-container{
+        padding: 20px;
+        border-radius: 8px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .about-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-section h1 {
+        font-size: 2em;
+        text-align: center;
+        display: inline;
+        margin-bottom: 20px;
+        /* background-color: hsla(7, 100%, 62%, 0.542); */
+
+    }
+    .about-section p {
+        font-size: 1.1em;
+        width: 50%;
+        text-align: justify;
+        line-height: 1.6;
+        /* text-align: left; */
+        margin-bottom: 10px;
+        box-shadow: #ccaca8;
+        /* background-color: #ff523b29; */
+    }
+
+    
+#footer {
+    width: 100vw;
+    height: fit-content;
+    padding: 2rem 5rem;
+    background-color: #dadada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo-section {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-logo-section>p {
+    font-size: .8rem;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-links{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.links-section{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.links-section a{
+    color: #181717;
+    font-weight: 800;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
